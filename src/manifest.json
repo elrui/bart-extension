@@ -1,0 +1,31 @@
+{
+    "name": "Backup Open Tabs", 
+    "version": "0.1.1",
+    "manifest_version": 3,
+
+    "description": "Create a backup of all the tabs open in the current window or restore an existent backup",
+ 
+    "icons" : {
+        "16":  "icons/icon16.png",
+        "32":  "icons/icon32.png",
+        "48":  "icons/icon48.png",
+        "64":  "icons/icon64.png",
+        "128": "icons/icon128.png"
+    },
+
+    "action": {
+        "default_icon": "icons/icon64.png",
+        "default_popup": "plugin.html",
+        "default_title": "Backup Open Tabs"
+    },
+
+    "background": {
+        "service_worker": "./background.js"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+     ]
+}

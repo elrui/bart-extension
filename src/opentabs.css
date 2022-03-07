@@ -1,0 +1,31 @@
+button {
+    background-color: #055a5a;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    outline: 2px;
+    outline-style: double;
+    outline-color: #26c5bd;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  button:hover {
+    background-color: #26c5bd;
+  }
+  
+  button:current {
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+  }
+
+body {
+    width: 650px;
+    background-color: #bbbbbb
+}
+
+.vernumber {
+  text-align: right
+}
